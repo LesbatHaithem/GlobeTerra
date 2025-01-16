@@ -10,7 +10,7 @@ export default function Home() {
       <section className="min-h-screen flex flex-col items-center justify-center relative">
         {/* Title and Subtitle Container */}
         <div className="text-center mb-8 z-20">
-          <h1 className="text-4xl md:text-6xl font-bold text-white hover:text-blue-400 transition-colors duration-300">
+          <h1 className="text-4xl md:text-6xl font-bold text-white hover:cursor-pointer transition-colors duration-300">
             Coming Soon
           </h1>
           <p className="mt-4 text-lg text-gray-300 hover:text-blue-300 transition-colors duration-300">
