@@ -5,13 +5,12 @@ import Logo from "./Logo"; // Import the new Logo component
 
 const Navbar = () => {
     return (
-        <nav className="flex justify-between items-center py-4 px-20 bg-slate-950 ">
+        <nav className="flex justify-between items-center py-4 px-20 bg-slate-950">
             {/* Logo Section */}
             <Link href={"/"}>
                 <div className={`flex items-center gap-2 ${platypi.className}`}>
-                    {/* Replace WalletMinimal with the custom Logo */}
                     <Logo size={30} />
-                    <span className="tracking-tighter text-3xl font-extrabold text-primary flex gap-2 items-center ">
+                    <span className="tracking-tighter text-3xl font-extrabold text-primary flex gap-2 items-center">
                         GlobeTerra
                     </span>
                 </div>
@@ -32,9 +31,22 @@ const Navbar = () => {
                 {/* Call-to-Action Button */}
                 <Link
                     href="/launch"
-                    className="bg-transparent border border-purple-500 text-purple-500 px-4 py-2 rounded-full hover:bg-purple-500 hover:text-white transition"
+                    className="relative overflow-hidden px-8 py-3 rounded-full text-white font-semibold transition-all duration-300 ease-in-out group"
                 >
-                    Launch App
+                    {/* Glassy Background */}
+                    <span className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 opacity-30 blur-md rounded-full"></span>
+                    <span className="absolute inset-0 bg-gradient-to-r from-white/10 to-white/20 backdrop-blur-sm rounded-full"></span>
+                    
+                    {/* Text */}
+                    <span className="relative z-10">Launch App</span>
+                    
+                    {/* Shimmer Effect */}
+                    <div className="absolute inset-0 rounded-full opacity-100 animate-loop-shimmer">
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 blur-md"></div>
+                    </div>
+
+                    {/* Glowing Edge */}
+                    <div className="absolute inset-0 rounded-full border border-transparent group-hover:border-white group-hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.9)] transition-all duration-500 animate-loop-glow"></div>
                 </Link>
             </div>
         </nav>

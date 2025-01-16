@@ -91,3 +91,29 @@
   padding: 0 0.5rem;
   /* Adjust as needed */
 }
+@keyframes loop-glow {
+  0%, 100% {
+      box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+      box-shadow: 0 0 20px 8px rgba(255, 255, 255, 0.6);
+  }
+}
+
+@keyframes loop-shimmer {
+  0% {
+      transform: translateX(-150%);
+  }
+  100% {
+      transform: translateX(150%);
+  }
+}
+
+.animate-loop-glow {
+  animation: loop-glow 3s infinite ease-in-out;
+}
+
+.animate-loop-shimmer {
+  animation: loop-shimmer 2.5s infinite linear;
+}
+
