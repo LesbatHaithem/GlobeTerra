@@ -1,28 +1,22 @@
-
-# Blockchain Wallet Project
+# Globe Terra
 
 ## Overview
-The Blockchain Wallet Project is a robust application designed to empower users with seamless access to blockchain technology. It enables users to create new wallets or import existing ones through seed phrases. With a user-friendly interface, the application offers real-time balance tracking, secure transaction capabilities, and a comprehensive view of transaction history. This project aims to simplify cryptocurrency management while enhancing security and user control.
 
+**Globe Terra** is an innovative cryptocurrency project aimed at revolutionizing global finance through cutting-edge blockchain technology. Our platform simplifies cryptocurrency management by offering secure wallet creation, seamless wallet import, real-time balance tracking, and effortless transaction management.
 
-![Project Screenshot](https://raw.githubusercontent.com/NishantCoder108/web-wallet-x/refs/heads/resources/Screenshot%20(1095).png)
+Backed by a team of developers, financial experts, and investors, **Globe Terra** is designed to connect users to a decentralized financial ecosystem with ease and security.
 
-
-## Features
-- **Create Wallet:** Users can easily create a new wallet with a secure seed phrase.
-- **Import Wallet:** Seamlessly import existing wallets using seed phrases for quick access.
-- **View Balances:** Check the real-time balance of various cryptocurrencies.
-- **Send Transactions:** Execute transactions to other wallet addresses with ease.
-- **Transaction History:** Access and review the latest transactions for better financial tracking.
-
-
-## Screenshot
-![Project Screenshot](https://raw.githubusercontent.com/NishantCoder108/web-wallet-x/refs/heads/resources/Screenshot%20(1096).png)
+🚧 **This project is currently in progress! Stay tuned for more updates.**
 
 
 
 ## Installation
-To install the project, clone the repository and run:
+To install the project : 
+
+Clone the repository:
+
+git clone https://github.com/your-username/globe-terra.git  
+cd globe-terra
 
 ```bash
 npm install
