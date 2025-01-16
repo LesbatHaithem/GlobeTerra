@@ -1,7 +1,7 @@
 import { platypi } from "@/lib/fonts";
-import { WalletMinimal } from "lucide-react";
 import React from "react";
 import Link from "next/link";
+import Logo from "./Logo"; // Import the new Logo component
 
 const Navbar = () => {
     return (
@@ -9,7 +9,8 @@ const Navbar = () => {
             {/* Logo Section */}
             <Link href={"/"}>
                 <div className={`flex items-center gap-2 ${platypi.className}`}>
-                    <WalletMinimal size={30} strokeWidth={3} />
+                    {/* Replace WalletMinimal with the custom Logo */}
+                    <Logo size={30} color="#6b46c1" />
                     <span className="tracking-tighter text-3xl font-extrabold text-primary flex gap-2 items-center ">
                         GlobeTerra
                     </span>
