@@ -5,12 +5,12 @@ import Logo from "./Logo"; // Import the new Logo component
 
 const Navbar = () => {
     return (
-        <nav className="flex justify-between items-center py-4 px-8 bg-black border-b border-gray-800">
+        <nav className="flex justify-between items-center py-4 px-20 bg-slate-950 ">
             {/* Logo Section */}
             <Link href={"/"}>
                 <div className={`flex items-center gap-2 ${platypi.className}`}>
                     {/* Replace WalletMinimal with the custom Logo */}
-                    <Logo size={30} color="#6b46c1" />
+                    <Logo size={30} />
                     <span className="tracking-tighter text-3xl font-extrabold text-primary flex gap-2 items-center ">
                         GlobeTerra
                     </span>
