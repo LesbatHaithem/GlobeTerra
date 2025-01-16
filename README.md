@@ -15,8 +15,8 @@ To install the project :
 
 Clone the repository:
 
-git clone https://github.com/your-username/globe-terra.git  
-cd globe-terra
+git clone https://github.com/your-username/GlobeTerra.git  
+cd GlobeTerra
 
 ```bash
 npm install
