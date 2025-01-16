@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Navbar = () => {
     return (
-        <nav className="flex justify-between items-center py-4 px-8 bg-black">
+        <nav className="flex justify-between items-center py-4 px-8 bg-black border-b border-gray-800">
             {/* Logo Section */}
             <Link href={"/"}>
                 <div className={`flex items-center gap-2 ${platypi.className}`}>
