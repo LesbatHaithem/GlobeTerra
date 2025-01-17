@@ -117,3 +117,7 @@
   animation: loop-shimmer 2.5s infinite linear;
 }
 
+/* Add this in your global styles or a CSS file */
+.card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
