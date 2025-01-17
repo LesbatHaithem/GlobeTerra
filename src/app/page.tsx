@@ -40,7 +40,8 @@ export default function Home() {
   }, []);
 
   return (
-<main className="min-h-screen bg-gradient-to-r from-slate-950 to-indigo-950  text-white">      {/* Section 1 */}
+    <main className="min-h-screen bg-slate-950 text-white">
+      {/* Section 1 */}
       <section
         ref={sectionRefs[0]}
         className={`pb-24 flex flex-row items-start justify-between mx-32 relative transform transition-all duration-1000 ease-out ${
@@ -59,7 +60,7 @@ export default function Home() {
               Harnessing the power of Deep Q-Networks (DQN) to revolutionize financial decision-making in the blockchain ecosystem.
             </p>
           </div>
-          <div className="bg-slate-800 bg-opacity-75 px-4 py-3 rounded-3xl mt-8 flex flex-row justify-between items-center mr-20">
+          <div className="bg-slate-950 bg-opacity-75 px-4 py-3 rounded-3xl mt-8 flex flex-row justify-between items-center mr-20">
             <h1>Download our Roadmap here</h1>
             <a
               href=""
@@ -68,8 +69,17 @@ export default function Home() {
               Roadmap
             </a>
           </div>
+          <div className="bg-slate-600 bg-opacity-25 border border-slate-700 shadow-lg shadow-slate-950 w-96 h-auto rounded-xl mt-10 flex flex-col">
+             <h1 className="text-xl pt-7 px-5">Audited By</h1>
+             <div>
+              <img src="TradingView.png" alt="" className="h-fit" />
+              
+             </div>
+          </div>
         </div>
-        <div className="relative mt-20 w-[80%] max-w-[600px] h-auto aspect-video rounded-lg overflow-hidden z-10 "></div>
+        <div className="relative mt-20 w-[80%] max-w-[600px] h-auto aspect-video rounded-lg overflow-hidden z-10 ">
+           
+        </div>
       </section>
 
       {/* Section 2 */}
@@ -79,15 +89,14 @@ export default function Home() {
           visibleSections.includes(1) ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-10">
+        <h2 className="text-3xl md:text-6xl font-bold text-white mb-10">
           Available On
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
+        <div className="flex flex-row justify-between items-center gap-12  mt-10">
           {[
             { name: "MEXC Global", image: "mexc.png" },
-            { name: "BitMart", image: "bitmart.webp" },
-            { name: "PancakeSwap", image: "pancakeswap.webp" },
-            { name: "GlobeTerra", image: "globeterra.png" },
+            { name: "BitMart", image: "Bitmart.png" },
+            { name: "PancakeSwap", image: "Kucoin.png" },
           ].map((platform) => (
             <div
               className="text-center transform transition-transform duration-500 hover:scale-105"
@@ -96,11 +105,9 @@ export default function Home() {
               <img
                 src={platform.image}
                 alt={platform.name}
-                className="w-32 h-32 rounded-full shadow-lg mx-auto"
+                className="w-68 mx-auto"
               />
-              <p className="text-xl font-semibold text-white mt-4">
-                {platform.name}
-              </p>
+              
             </div>
           ))}
         </div>
