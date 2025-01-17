@@ -40,8 +40,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
-      {/* Section 1 */}
+<main className="min-h-screen bg-gradient-to-r from-slate-950 to-indigo-950  text-white">      {/* Section 1 */}
       <section
         ref={sectionRefs[0]}
         className={`pb-24 flex flex-row items-start justify-between mx-32 relative transform transition-all duration-1000 ease-out ${
