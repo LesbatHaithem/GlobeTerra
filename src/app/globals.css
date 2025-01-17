@@ -93,10 +93,10 @@
 }
 @keyframes loop-glow {
   0%, 100% {
-      box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 20px 8px rgba(224, 191, 255, 0.4);
   }
   50% {
-      box-shadow: 0 0 20px 8px rgba(255, 255, 255, 0.6);
+      box-shadow: 0 0 35px 12px rgba(224, 191, 255, 0.7);
   }
 }
 

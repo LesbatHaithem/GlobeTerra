@@ -40,7 +40,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-gradient-to-r from-slate-950 to-indigo-950 text-white">
+    <main className="min-h-screen bg-slate-950 text-white">
       {/* Section 1 */}
       <section
         ref={sectionRefs[0]}

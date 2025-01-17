@@ -33,20 +33,35 @@ const Navbar = () => {
                     href="/launch"
                     className="relative overflow-hidden px-8 py-3 rounded-full text-white font-semibold transition-all duration-300 ease-in-out group"
                 >
-                    {/* Glassy Background */}
-                    <span className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 opacity-30 blur-md rounded-full"></span>
-                    <span className="absolute inset-0 bg-gradient-to-r from-white/10 to-white/20 backdrop-blur-sm rounded-full"></span>
-                    
+                    {/* Uncomment one of the following background state options */}
+
+                    {/* Jet Black to Electric Blue Option */}
+                    {/* 
+                    <span className="absolute inset-0 bg-[#1A1A1A] group-hover:bg-[#00BFFF] transition-all duration-500 ease-in-out rounded-full"></span>
+                    */}
+
+                    {/* Charcoal Purple to Gold Yellow Option */}
+                    <span className="absolute inset-0 bg-[#3B2E5A] group-hover:bg-[#FFC107] transition-all duration-500 ease-in-out rounded-full"></span>
+
+                    {/* Gunmetal Gray to Soft Pink Option */}
+                    {/* 
+                    <span className="absolute inset-0 bg-[#2F343F] group-hover:bg-[#FF6F91] transition-all duration-500 ease-in-out rounded-full"></span>
+                    */}
+
+                    <span className="absolute inset-0 bg-gradient-to-r from-white/10 to-white/20 backdrop-blur-sm opacity-70 rounded-full"></span>
+
                     {/* Text */}
-                    <span className="relative z-10">Launch App</span>
-                    
+                    <span className="relative z-10 group-hover:text-black transition-all duration-500">
+                        Launch App
+                    </span>
+
                     {/* Shimmer Effect */}
-                    <div className="absolute inset-0 rounded-full opacity-100 animate-loop-shimmer">
+                    <div className="absolute inset-0 rounded-full opacity-70 animate-loop-shimmer">
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 blur-md"></div>
                     </div>
 
                     {/* Glowing Edge */}
-                    <div className="absolute inset-0 rounded-full border border-transparent group-hover:border-white group-hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.9)] transition-all duration-500 animate-loop-glow"></div>
+                    <div className="absolute inset-0 rounded-full border border-transparent group-hover:border-current group-hover:shadow-[0_0_25px_8px_rgba(0,191,255,0.8)] transition-all duration-500 animate-loop-glow"></div>
                 </Link>
             </div>
         </nav>
