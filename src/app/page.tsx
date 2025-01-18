@@ -40,7 +40,8 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
+    
+    <main className="min-h-screen bg-cover text-white bg-gradient-to-r from-black to-[#220238]" >
       {/* Section 1 */}
       <section
         ref={sectionRefs[0]}
@@ -53,7 +54,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-7xl font-bold text-white hover:cursor-pointer transition-all duration-500">
               GlobeTerra
             </h1>
-            <p className="mt-4 text-lg text-purple-700 transition-all duration-500">
+            <p className="mt-4 text-lg text-yellow-600 transition-all duration-500">
               Revolutionizing Global Financial Connectivity
             </p>
             <p className="mt-4 text-lg text-gray-400">
@@ -64,7 +65,7 @@ export default function Home() {
             <h1>Download our Roadmap here</h1>
             <a
               href=""
-              className="border border-purple-700 rounded-3xl text-purple-700 px-2 py-2 hover:bg-gradient-to-r from-purple-700 to-black hover:text-white"
+              className="border border-yellow-600 rounded-3xl text-yellow-600 px-2 py-2 hover:bg-yellow-600  hover:text-black"
             >
               Roadmap
             </a>
@@ -77,8 +78,8 @@ export default function Home() {
              </div>
           </div>
         </div>
-        <div className="relative mt-20 w-[80%] max-w-[600px] h-auto aspect-video rounded-lg overflow-hidden z-10 ">
-           
+        <div className="relative flex flex-col items-center mt-20 w-full max-w-[700px] h-96 aspect-video rounded-lg overflow-hidden z-10 ">
+           <img src="original-d7d1fab1bfcb5eb34fd2f-unscreen.gif" alt="" className="h-full" />
         </div>
       </section>
 
@@ -94,7 +95,7 @@ export default function Home() {
         </h2>
         <div className="flex flex-row justify-between items-center gap-12  mt-10">
           {[
-            { name: "MEXC Global", image: "mexc.png" },
+            { name: "MEXC Global", image: "https://neurashi.com/wp-content/uploads/2023/10/image.png" },
             { name: "BitMart", image: "Bitmart.png" },
             { name: "PancakeSwap", image: "Kucoin.png" },
           ].map((platform) => (
@@ -105,7 +106,7 @@ export default function Home() {
               <img
                 src={platform.image}
                 alt={platform.name}
-                className="w-68 mx-auto"
+                className="w-64 h-auto mx-auto"
               />
               
             </div>
@@ -120,30 +121,21 @@ export default function Home() {
           visibleSections.includes(2) ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
-          Activity
+        
+        <h2 className="text-3xl md:text-6xl font-bold text-white mb-12 ">
+          Explore the Power of Deep Q-Networks
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {[
-            { name: "DEXSCREENER", image: "/images/dexscreener.png" },
-            { name: "DEXTOOLS", image: "/images/dextools.png" },
-            { name: "CoinMarketCap", image: "/images/coinmarketcap.png" },
-          ].map((activity) => (
-            <div
-              className="text-center transform transition-transform duration-500 hover:scale-105"
-              key={activity.name}
-            >
-              <img
-                src={activity.image}
-                alt={activity.name}
-                className="w-28 h-28 rounded-lg shadow-md mx-auto"
-              />
-              <p className="text-xl font-semibold text-white mt-4">
-                {activity.name}
-              </p>
-            </div>
-          ))}
+        <div className=" flex flex-col gap-10 justify-center items-center w-[70%] h-auto">
+          
+
+       <p className="text-xl font-thin text-center text-yellow-200 w-[70%]">
+       Discover how Globe Terra harnesses Deep Q-Networks (DQN) to revolutionize decision-making in blockchain finance. Unlock smarter, faster, and secure solutions for global financial connectivity.
+       </p>
+       <img src="about.png" alt="" className="h-64 w-auto"/> 
+       <a href="" className="border border-yellow-600 rounded-3xl text-yellow-600 px-2 py-2 hover:bg-yellow-600  hover:text-black">Discover</a>
+          
         </div>
+        
       </section>
     </main>
   );
