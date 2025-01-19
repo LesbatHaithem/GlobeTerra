@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     {
       rel: "icon",
       type: "image/x-icon",
-      url: "/favicon.ico",
+      url: "icone3.png",
       media: "(prefers-color-scheme: light)",
     },
     {
       rel: "icon",
       type: "image/png",
-      url: "/favicon.ico",
+      url: "icone3.png",
       media: "(prefers-color-scheme: dark)",
     },
   ],
@@ -34,7 +34,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`min-h-screen w-screen  ${inter.className}`}>
+      <body className={`min-h-screen w-screen  ${inter.className}`}
+       >
         <ThemeProvider
           attribute="class"
           enableSystem
