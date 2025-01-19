@@ -5,7 +5,7 @@ import Logo from "./Logo"; // Import the new Logo component
 
 const Navbar = () => {
     return (
-        <nav className="flex justify-between items-center py-4 px-20 bg-gradient-to-r from-black to-[#220238]">
+        <nav className="flex justify-between items-center py-4 px-20 bg-gradient-to-l from-black to-[#33023da8]">
             {/* Logo Section */}
             <Link href={"/"}>
                 <div className={`flex items-center gap-2 ${platypi.className}`}>
