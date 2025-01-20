@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`min-h-screen w-screen  ${inter.className}`}
+      <body className={`min-h-screen w-screen overflow-x-hidden ${inter.className}`}
        >
         <ThemeProvider
           attribute="class"

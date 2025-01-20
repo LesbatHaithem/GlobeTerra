@@ -4,8 +4,8 @@ import { FaEnvelope, FaTwitter, FaInstagram, FaYoutube, FaTelegram, FaGithub, Fa
 
 const Footer = () => {
   return (
-    <footer className="w-screen bg-neutral-950 text-white py-8">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8 px-6">
+    <footer className="w-screen bg-neutral-950 text-white pt-20 pb-5 pl-24 px-11">
+      <div className="w-full flex flex-col md:flex-row justify-between items-start gap-8 ">
         {/* Logo and Description */}
         <div className="flex flex-col items-start w-full md:w-1/3">
           <h2 className="text-2xl font-bold">GLOBE TERRA</h2>
@@ -130,32 +130,7 @@ const Footer = () => {
       </div>
 
       {/* Social Media Icons */}
-      <div className="mt-8 flex justify-center space-x-4">
-        <Link href="https://github.com" target="_blank" className="text-gray-500 hover:text-white">
-          <FaGithub size={24} />
-        </Link>
-        <Link href="https://twitter.com" target="_blank" className="text-gray-500 hover:text-white">
-          <FaTwitter size={24} />
-        </Link>
-        <Link href="https://telegram.org" target="_blank" className="text-gray-500 hover:text-white">
-          <FaTelegram size={24} />
-        </Link>
-        <Link href="https://instagram.com" target="_blank" className="text-gray-500 hover:text-white">
-          <FaInstagram size={24} />
-        </Link>
-        <Link href="https://linkedin.com" target="_blank" className="text-gray-500 hover:text-white">
-          <FaLinkedin size={24} />
-        </Link>
-        <Link href="https://medium.com" target="_blank" className="text-gray-500 hover:text-white">
-          <FaYoutube size={24} />
-        </Link>
-        <Link href="https://reddit.com" target="_blank" className="text-gray-500 hover:text-white">
-          <FaReddit size={24} />
-        </Link>
-        <Link href="https://tiktok.com" target="_blank" className="text-gray-500 hover:text-white">
-          <FaTiktok size={24} />
-        </Link>
-      </div>
+      
 
       {/* Copyright */}
       <div className="mt-8 text-center text-gray-500">

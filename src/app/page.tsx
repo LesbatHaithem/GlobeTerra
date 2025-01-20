@@ -1,10 +1,13 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import { FaEnvelope, FaTwitter, FaInstagram, FaYoutube, FaTelegram, FaGithub, FaLinkedin, FaTiktok, FaReddit } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Home() {
   const [visibleSections, setVisibleSections] = useState<number[]>([]);
-  const sectionRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
+  const sectionRefs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -202,10 +205,10 @@ export default function Home() {
           </a>
         </div>
       </section>
-      {/* Section 2 */}
+      {/* Section 4 */}
       <section
         ref={sectionRefs[3]}
-        className={`py-16 flex flex-col items-center justify-center p-8 transform transition-all duration-1000 ease-out ${
+        className={`h-screen py-16 flex flex-col items-center justify-center p-8 transform transition-all duration-1000 ease-out ${
           visibleSections.includes(3) ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
@@ -230,6 +233,54 @@ export default function Home() {
             </div>
           ))}
         </div>
+      </section>
+      <section 
+      ref={sectionRefs[4]}
+      className={`h-screen py-16 flex flex-row items-center justify-center p-8 transform transition-all duration-1000 ease-out ${
+        visibleSections.includes(4) ? "opacity-100 scale-100" : "opacity-0 scale-95"
+      }`}
+      >
+        <div className="flex flex-row items-center justify-center gap-12">
+        <h1 className="text-3xl text-center font-bold">Our Links : </h1>
+        
+        <div className="flex justify-center space-x-7">
+        <Link href="https://github.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
+          
+          <FaGithub size={40} />
+          <h1>Github</h1>
+        </Link>
+        <Link href="https://twitter.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
+          <FaXTwitter size={40} />
+          <h1>X</h1>
+
+        </Link>
+        <Link href="https://telegram.org" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
+          <FaTelegram size={40} />
+          <h1>Telegram</h1>
+        </Link>
+        <Link href="https://instagram.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
+          <FaInstagram size={40} />
+          <h1>Instagram</h1>
+        </Link>
+        <Link href="https://linkedin.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
+          <FaLinkedin size={40} />
+          <h1>LinkedIn</h1>
+        </Link>
+        <Link href="https://medium.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
+          <FaYoutube size={40} />
+          <h1>Youtube</h1>
+        </Link>
+        <Link href="https://reddit.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
+          <FaReddit size={40} />
+          <h1>Reddit</h1>
+        </Link>
+        <Link href="https://tiktok.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
+          <FaTiktok size={40} />
+          <h1>Tiktok</h1>
+        </Link>
+      </div>
+      </div>
+
       </section>
            
 
