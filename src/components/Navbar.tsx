@@ -10,13 +10,13 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-black to-[#33023da8] text-white shadow-lg">
+    <nav className="bg-gradient-to-r from-black to-[#33023d] text-white shadow-lg">
       {/* Desktop and Logo Section */}
       <div className="flex justify-between items-center px-6 py-4 md:px-20">
         <Link href="/" className="flex items-center gap-2">
           <Logo size={30} />
           <span
-            className={`text-2xl font-extrabold text-primary ${platypi.className}`}
+            className={`text-2xl text-white font-extrabold text-primary ${platypi.className}`}
           >
             GlobeTerra
           </span>
