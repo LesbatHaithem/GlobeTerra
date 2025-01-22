@@ -83,11 +83,11 @@ export default function Home() {
       {/* Section 1 */}
       <section
         ref={sectionRefs[0]}
-        className={`pb-24 flex flex-row items-start justify-between relative transform transition-all duration-1000 ease-out ${
+        className={`md:pb-24 flex flex-col md:flex-row items-center justify-center md:justify-between relative transform transition-all duration-1000 ease-out ${
           visibleSections.includes(0) ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <div className="mt-10 z-20 ml-32 w-[75%]">
+        <div className="md:mt-10 z-20 md:ml-32 w-[75%]">
           <div>
             <h1 className="text-4xl md:text-7xl font-bold text-white hover:cursor-pointer transition-all duration-500">
               GlobeTerra
@@ -99,8 +99,8 @@ export default function Home() {
               Harnessing the power of Deep Q-Networks (DQN) to revolutionize financial decision-making in the blockchain ecosystem.
             </p>
           </div>
-          <div className="bg-slate-950 bg-opacity-75 px-4 py-3 rounded-3xl mt-8 flex flex-row justify-between items-center mr-20">
-            <h1>Download our Roadmap here</h1>
+          <div className="bg-slate-950 bg-opacity-75 md:px-4 md:py-3 px-3 py-2 rounded-3xl mt-8 flex flex-row justify-between items-center md:mr-20">
+            <h1 className="">Download our Roadmap </h1>
             <a
               href=""
               className="border border-yellow-600 rounded-3xl text-yellow-600 px-2 py-2 hover:bg-yellow-600 hover:text-black"
@@ -108,7 +108,7 @@ export default function Home() {
               Roadmap
             </a>
           </div>
-          <div className="bg-slate-600 bg-opacity-35 border border-slate-700 shadow-lg shadow-slate-950 w-96 h-auto rounded-xl mt-10 flex flex-col hover:scale-105">
+          <div className="bg-slate-600 bg-opacity-35 border border-slate-700 shadow-lg shadow-slate-950 md:w-96 h-auto rounded-xl mt-10 flex flex-col hover:scale-105">
             <h1 className="text-xl pt-7 px-5">Audited By</h1>
             <div>
               <img src="TradingView.png" alt="" className="h-fit" />
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
         
         <div className="relative flex flex-col items-center mt-20 w-full h-96 aspect-video rounded-lg ">
-          <img src="original-d7d1fab1bfcb5eb34fd2f-unscreen.gif" alt="" className="h-full hover:scale-125" />
+          <img src="original-d7d1fab1bfcb5eb34fd2f-unscreen.gif" alt="" className="md:h-full  md:hover:scale-125" />
           
         </div>
         
@@ -132,9 +132,9 @@ export default function Home() {
         <h2 className="text-3xl md:text-6xl font-bold text-white mb-12">
           $GTR Airdrop
         </h2>
-        <div className="flex flex-col justify-between items-center gap-12 mt-10 bg-black bg-opacity-55 shadow-lg w-[60%] rounded-xl px-10 py-10 hover:scale-105">
-          <h1 className="text-2xl font-bold text-center">Claim Your Free $GTR</h1>
-          <p className="text-xl font-thin text-center w-[70%] text-yellow-200">
+        <div className="flex flex-col justify-between items-center gap-12 mt-10 bg-black bg-opacity-55 shadow-lg md:w-[60%] rounded-xl px-10 py-10 hover:scale-105">
+          <h1 className="md:text-2xl font-bold text-center">Claim Your Free $GTR</h1>
+          <p className="md:text-xl font-thin text-center md:w-[70%] text-yellow-200">
             The $GTR airdrop begins on <strong>February 1st</strong>. Join us on Telegram and X to claim your share and be part of the future of financial connectivity.
           </p>
 
@@ -143,18 +143,18 @@ export default function Home() {
             <h3 className="text-xl text-yellow-600 mb-4">Countdown to Airdrop:</h3>
             <div
               id="countdown"
-              className="text-4xl font-bold text-yellow-400 bg-black bg-opacity-70 px-4 py-2 rounded-xl"
+              className="md:text-4xl text-2xl font-bold text-yellow-400 bg-black bg-opacity-70 px-4 py-2 rounded-xl"
             >
               Loading...
             </div>
           </div>
 
-          <div className="flex flex-row justify-between items-center gap-8 mt-8">
+          <div className="flex flex-row text-xs justify-between items-center gap-8 mt-8">
             <a
               href="https://telegram.org/"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-yellow-600 rounded-xl text-yellow-600 px-4 py-2 hover:bg-yellow-600 hover:text-black"
+              className="border  border-yellow-600 rounded-xl text-yellow-600 px-4 py-2 hover:bg-yellow-600 hover:text-black"
             >
               Join on Telegram
             </a>
@@ -182,20 +182,20 @@ export default function Home() {
         <h2 className="text-3xl md:text-6xl font-bold text-white mb-12">
           FEATURES Of GLOBE TERRA
         </h2>
-        <div className="flex flex-col justify-between items-center gap-12 mt-10 bg-black bg-opacity-75 shadow-lg w-[60%] rounded-xl px-10 py-10 hover:scale-105">
+        <div className="flex flex-col justify-between items-center gap-12 mt-10 bg-black bg-opacity-75 shadow-lg md:w-[60%] rounded-xl px-10 py-10 hover:scale-105">
         <h1 className="text-3xl font-bold text-center text-yellow-600">DQN based AI Agent</h1>
-        <div className="flex flex-row justify-between items-center gap-12">
-          <p className="text-xl font-thin w-[50%]">
+        <div className="flex md:flex-row flex-col justify-between items-center gap-12">
+          <p className="md:text-xl text-sm font-thin md:w-[50%]">
           An AI agent powered by Deep Q-Networks (DQN) for intelligent decision-making, optimizing actions in real-time to revolutionize blockchain finance and global connectivity.
           </p>
           <img src="aiagent.jpg" alt="" className=" rounded-xl border border-yellow-600"/>
           </div>
 
         </div>
-        <div className="flex flex-col justify-between items-center gap-12 mt-10 bg-black bg-opacity-75 shadow-xl  w-[60%] rounded-xl px-10 py-10 hover:scale-105">
+        <div className="flex flex-col justify-between items-center gap-12 mt-10 bg-black bg-opacity-75 shadow-lg md:w-[60%] rounded-xl px-10 py-10 hover:scale-105">
           <h1 className="text-3xl font-bold text-center text-yellow-600">Globe Terra API</h1>
-          <div className="flex flex-row justify-between items-center gap-12">
-            <p className="text-xl font-thin w-[50%]">
+          <div className="flex md:flex-row flex-col justify-between items-center gap-12">
+            <p className="md:text-xl font-thin md:w-[50%] text-sm">
               Seamlessly integrate advanced DQN-powered AI into your applications with the Globe Terra API. Enable smarter, faster, and secure solutions for global financial connectivity.
             </p>
             <img src="about.png" alt="Globe Terra API" className="rounded-xl px-5 py-5 border border-yellow-600 w-64 h-48" />
@@ -210,91 +210,82 @@ export default function Home() {
       </section>
       {/* Section 4 */}
       <section
-        ref={sectionRefs[3]}
-        className={`h-screen py-16 flex flex-col items-center justify-center p-8 transform transition-all duration-1000 ease-out ${
-          visibleSections.includes(3) ? "opacity-100 scale-100" : "opacity-0 scale-95"
-        }`}
+  ref={sectionRefs[3]}
+  className={`md:h-screen py-16 flex flex-col items-center justify-center p-8 transform transition-all duration-1000 ease-out ${
+    visibleSections.includes(3) ? "opacity-100 scale-100" : "opacity-0 scale-95"
+  }`}
+>
+  <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-10 text-center">
+    Soon available On
+  </h2>
+  <div className="flex flex-wrap justify-center items-center gap-8 mt-10">
+    {[
+      { name: "MEXC Global", image: "https://neurashi.com/wp-content/uploads/2023/10/image.png" },
+      { name: "BitMart", image: "Bitmart.png" },
+      { name: "PancakeSwap", image: "Kucoin.png" },
+    ].map((platform) => (
+      <div
+        className="text-center transform transition-transform duration-500 hover:scale-105"
+        key={platform.name}
       >
-        <h2 className="text-3xl md:text-6xl font-bold text-white mb-10">
-          Soon available On
-        </h2>
-        <div className="flex flex-row justify-between items-center gap-12 mt-10">
-          {[
-            { name: "MEXC Global", image: "https://neurashi.com/wp-content/uploads/2023/10/image.png" },
-            { name: "BitMart", image: "Bitmart.png" },
-            { name: "PancakeSwap", image: "Kucoin.png" },
-          ].map((platform) => (
-            <div
-              className="text-center transform transition-transform duration-500 hover:scale-105"
-              key={platform.name}
-            >
-              <img
-                src={platform.image}
-                alt={platform.name}
-                className="w-64 h-auto mx-auto"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
-      <section 
-      ref={sectionRefs[4]}
-      className={`h-screen py-16 flex flex-col items-center justify-center p-8 transform transition-all duration-1000 ease-out ${
-        visibleSections.includes(4) ? "opacity-100 scale-100" : "opacity-0 scale-95"
-      }`}
-      >
-        
-        
-      <div className="flex flex-col items-center justify-center gap-12 mt-10 rounded-xl bg-black bg-opacity-75 shadow-lg w-[60%] px-10 py-10 border border-yellow-600">
-         <h1 className="text-2xl font-bold">Subscribe to our newsletter</h1>
-          <div className="flex flex-row items-center justify-between gap-4">
-            <input type="email" placeholder="Enter your email" className="border border-yellow-600 rounded-xl px-4 py-2" />
-            <button className="border border-yellow-600 rounded-xl px-4 py-2 hover:bg-yellow-600 hover:text-black">Subscribe</button>
+        <img
+          src={platform.image}
+          alt={platform.name}
+          className="w-40 sm:w-48 md:w-64 h-auto mx-auto"
+        />
       </div>
-      <div className="flex flex-col items-center justify-center gap-7 text-xs">
-        <h1 className="text-xl text-center font-bold">Our Links : </h1>
-        
-        <div className="flex justify-center space-x-5">
-        <Link href="https://github.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          
-          <FaGithub size={25} />
-          <h1>Github</h1>
-        </Link>
-        <Link href="https://twitter.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          <FaXTwitter size={25} />
-          <h1>X</h1>
+    ))}
+  </div>
+</section>
 
-        </Link>
-        <Link href="https://telegram.org" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          <FaTelegram size={25} />
-          <h1>Telegram</h1>
-        </Link>
-        <Link href="https://instagram.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          <FaInstagram size={25} />
-          <h1>Instagram</h1>
-        </Link>
-        <Link href="https://linkedin.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          <FaLinkedin size={25} />
-          <h1>LinkedIn</h1>
-        </Link>
-        <Link href="https://medium.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          <FaYoutube size={25} />
-          <h1>Youtube</h1>
-        </Link>
-        <Link href="https://reddit.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          <FaReddit size={25} />
-          <h1>Reddit</h1>
-        </Link>
-        <Link href="https://tiktok.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          <FaTiktok size={25} />
-          <h1>Tiktok</h1>
-        </Link>
+<section
+  ref={sectionRefs[4]}
+  className={`h-screen py-16 flex flex-col items-center justify-center p-8 transform transition-all duration-1000 ease-out ${
+    visibleSections.includes(4) ? "opacity-100 scale-100" : "opacity-0 scale-95"
+  }`}
+>
+  <div className="flex flex-col items-center justify-center gap-12 mt-10 rounded-xl bg-black bg-opacity-75 shadow-lg md:w-[80%] lg:w-[70%] max-w-screen px-6 sm:px-8 md:px-10 py-10 border border-yellow-600">
+    <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-center">
+      Subscribe to our newsletter
+    </h1>
+    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 w-full md:w-[60%]">
+      <input
+        type="email"
+        placeholder="Enter your email"
+        className="flex-1 border border-yellow-600 rounded-xl px-4 py-2 text-sm w-full  sm:w-auto"
+      />
+      <button className="border border-yellow-600 rounded-xl px-4 py-2 hover:bg-yellow-600 hover:text-black">
+        Subscribe
+      </button>
+    </div>
+    <div className="flex flex-col items-center justify-center gap-5">
+      <h1 className="text-sm sm:text-base md:text-xl font-bold text-center">Our Links:</h1>
+      <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
+        {[
+          { href: "https://github.com", icon: <FaGithub size={25} />, name: "Github" },
+          { href: "https://twitter.com", icon: <FaXTwitter size={25} />, name: "X" },
+          { href: "https://telegram.org", icon: <FaTelegram size={25} />, name: "Telegram" },
+          { href: "https://instagram.com", icon: <FaInstagram size={25} />, name: "Instagram" },
+          { href: "https://linkedin.com", icon: <FaLinkedin size={25} />, name: "LinkedIn" },
+          { href: "https://medium.com", icon: <FaYoutube size={25} />, name: "YouTube" },
+          { href: "https://reddit.com", icon: <FaReddit size={25} />, name: "Reddit" },
+          { href: "https://tiktok.com", icon: <FaTiktok size={25} />, name: "TikTok" },
+        ].map((link) => (
+          <Link
+            key={link.name}
+            href={link.href}
+            target="_blank"
+            className="flex flex-col justify-center items-center text-gray-500 hover:text-white"
+          >
+            {link.icon}
+            <h1 className="text-xs sm:text-sm">{link.name}</h1>
+          </Link>
+        ))}
       </div>
+    </div>
+  </div>
+</section>
 
-      </div>
-      </div>
-
-      </section>
            
 
     </main>
