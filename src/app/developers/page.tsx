@@ -38,58 +38,52 @@ const Developers = () => {
           </div>
 
           {/* Placeholder Icon */}
-          <div className="h-screen w-full flex items-center justify-center">
-          <div className="w-[70%] flex flex-col items-center justify-center gap-12 mt-10 rounded-xl bg-black bg-opacity-75 shadow-lg px-10 py-10 border border-yellow-600">
-         <h1 className="text-2xl font-bold">Subscribe to our newsletter</h1>
-          <div className="flex flex-row items-center justify-between gap-4">
-            <input type="email" placeholder="Enter your email" className="border border-yellow-600 rounded-xl px-4 py-2" />
-            <button className="border border-yellow-600 rounded-xl px-4 py-2 hover:bg-yellow-600 hover:text-black">Subscribe</button>
-      </div>
-      <div className="flex flex-col items-center justify-center gap-7 text-xs">
-        <h1 className="text-xl text-center font-bold">Our Links : </h1>
-        
-        <div className="flex justify-center space-x-5">
-        <Link href="https://github.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          
-          <FaGithub size={25} />
-          <h1>Github</h1>
-        </Link>
-        <Link href="https://twitter.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          <FaXTwitter size={25} />
-          <h1>X</h1>
+  
 
-        </Link>
-        <Link href="https://telegram.org" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          <FaTelegram size={25} />
-          <h1>Telegram</h1>
-        </Link>
-        <Link href="https://instagram.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          <FaInstagram size={25} />
-          <h1>Instagram</h1>
-        </Link>
-        <Link href="https://linkedin.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          <FaLinkedin size={25} />
-          <h1>LinkedIn</h1>
-        </Link>
-        <Link href="https://medium.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          <FaYoutube size={25} />
-          <h1>Youtube</h1>
-        </Link>
-        <Link href="https://reddit.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          <FaReddit size={25} />
-          <h1>Reddit</h1>
-        </Link>
-        <Link href="https://tiktok.com" target="_blank" className="flex flex-col justify-center items-center text-gray-500 hover:text-white">
-          <FaTiktok size={25} />
-          <h1>Tiktok</h1>
-        </Link>
-      </div>
 
+  <div className="flex flex-col items-center justify-center gap-12 mt-20 rounded-xl bg-black bg-opacity-75 shadow-lg md:w-[90%] lg:w-[70%] max-w-screen px-6 sm:px-8 md:px-10 py-10 border border-yellow-600">
+    <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-center">
+      Subscribe to our newsletter
+    </h1>
+    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 w-full">
+      <input
+        type="email"
+        placeholder="Enter your email"
+        className="flex-1 border border-yellow-600 rounded-xl px-4 py-2 text-sm w-full sm:w-auto"
+      />
+      <button className="border border-yellow-600 rounded-xl px-4 py-2 hover:bg-yellow-600 hover:text-black">
+        Subscribe
+      </button>
+    </div>
+    <div className="flex flex-col items-center justify-center gap-5">
+      <h1 className="text-sm sm:text-base md:text-xl font-bold text-center">Our Links:</h1>
+      <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
+        {[
+          { href: "https://github.com", icon: <FaGithub size={25} />, name: "Github" },
+          { href: "https://twitter.com", icon: <FaXTwitter size={25} />, name: "X" },
+          { href: "https://telegram.org", icon: <FaTelegram size={25} />, name: "Telegram" },
+          { href: "https://instagram.com", icon: <FaInstagram size={25} />, name: "Instagram" },
+          { href: "https://linkedin.com", icon: <FaLinkedin size={25} />, name: "LinkedIn" },
+          { href: "https://medium.com", icon: <FaYoutube size={25} />, name: "YouTube" },
+          { href: "https://reddit.com", icon: <FaReddit size={25} />, name: "Reddit" },
+          { href: "https://tiktok.com", icon: <FaTiktok size={25} />, name: "TikTok" },
+        ].map((link) => (
+          <Link
+            key={link.name}
+            href={link.href}
+            target="_blank"
+            className="flex flex-col justify-center items-center text-gray-500 hover:text-white"
+          >
+            {link.icon}
+            <h1 className="text-xs sm:text-sm">{link.name}</h1>
+          </Link>
+        ))}
       </div>
-      </div>
-      </div>
-          
+    </div>
+  </div>
+
         </div>
+
       </main>
     </>
   );
