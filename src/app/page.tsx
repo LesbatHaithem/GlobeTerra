@@ -79,7 +79,7 @@ export default function Home() {
   
 
   return (
-    <main className="min-h-screen bg-cover text-white bg-gradient-to-r from-black to-[#33023d8a]">
+    <main className="min-h-screen bg-cover text-white bg-gradient-to-r from-black to-[#33023d]">
       {/* Section 1 */}
       <section
         ref={sectionRefs[0]}

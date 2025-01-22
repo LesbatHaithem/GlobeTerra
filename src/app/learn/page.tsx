@@ -9,7 +9,7 @@ const Learn = () => {
         <title>Learn | Globe Terra</title>
         <meta name="description" content="Learn more about Globe Terra and its ecosystem" />
       </Head>
-      <main className="min-h-screen  bg-gradient-to-r from-black to-[#33023da8] flex flex-col items-center justify-center px-8 pb-20">
+      <main className="min-h-screen  bg-gradient-to-r from-black to-[#33023d] flex flex-col items-center justify-center px-8 pb-20">
         {/* Title Section */}
         <div className="text-center mt-16">
           <h1 className="text-6xl font-bold text-white mb-6">Learn about Globe Terra</h1>
