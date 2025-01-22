@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { FaEnvelope, FaTwitter, FaInstagram, FaYoutube, FaTelegram, FaGithub, FaLinkedin, FaTiktok, FaReddit } from "react-icons/fa";
+import {  FaInstagram, FaYoutube, FaTelegram, FaGithub, FaLinkedin, FaTiktok, FaReddit } from "react-icons/fa";
 import Link from "next/link";
 import { FaXTwitter } from "react-icons/fa6";
 

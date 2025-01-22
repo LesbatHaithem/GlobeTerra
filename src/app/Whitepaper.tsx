@@ -14,7 +14,7 @@ const Whitepaper = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-4">Globe Terra Whitepaper</h1>
           <p className="text-lg mb-6">
-            Welcome to the Globe Terra Whitepaper! Here, you'll find all the
+            Welcome to the Globe Terra Whitepaper! Here, you will find all the
             details about our mission, ecosystem, and plans for the future.
           </p>
           {/* Add content as required */}
