@@ -87,7 +87,7 @@ export default function Home() {
           visibleSections.includes(0) ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <div className="md:mt-10 z-20 md:ml-32 w-[75%]">
+        <div className="md:mt-10 mt-16 z-20 md:ml-32 w-[75%] text-center">
           <div>
             <h1 className="text-4xl md:text-7xl font-bold text-white hover:cursor-pointer transition-all duration-500">
               GlobeTerra

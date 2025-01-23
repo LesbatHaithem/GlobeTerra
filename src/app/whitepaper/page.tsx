@@ -9,7 +9,7 @@ const Whitepaper = () => {
         <title>Whitepaper | Globe Terra</title>
         <meta name="description" content="Globe Terra Whitepaper" />
       </Head>
-      <main className="min-h-screen bg-gradient-to-r from-black to-[#33023da8] flex flex-col items-center justify-center px-8">
+      <main className="min-h-screen bg-gradient-to-r from-black to-[#33023d] flex flex-col items-center justify-center px-8">
         {/* Title Section */}
         <div className="text-center">
           <h1 className="text-6xl font-bold text-white mb-6">Last Version</h1>
