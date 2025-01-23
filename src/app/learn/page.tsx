@@ -12,7 +12,7 @@ const Learn = () => {
       <main className="min-h-screen  bg-gradient-to-r from-black to-[#33023d] flex flex-col items-center justify-center px-8 pb-20">
         {/* Title Section */}
         <div className="text-center mt-16">
-          <h1 className="text-6xl font-bold text-white mb-6">Learn about Globe Terra</h1>
+          <h1 className="md:text-6xl text-3xl font-bold text-white mb-6">Learn about Globe Terra</h1>
           <p className="text-lg text-gray-300">
             Deepen your knowledge of RL, Globe Terra, and more.
           </p>

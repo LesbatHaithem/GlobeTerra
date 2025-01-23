@@ -42,7 +42,7 @@ const Developers = () => {
 
 
   <div className="flex flex-col items-center justify-center gap-12 mt-20 rounded-xl bg-black bg-opacity-75 shadow-lg md:w-[90%] lg:w-[70%] max-w-screen px-6 sm:px-8 md:px-10 py-10 border border-yellow-600">
-    <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-center">
+    <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-center text-white">
       Subscribe to our newsletter
     </h1>
     <div className="flex flex-col sm:flex-row items-center justify-between gap-4 w-full">
