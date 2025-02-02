@@ -121,3 +121,8 @@
 .card:hover {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}

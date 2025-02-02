@@ -11,7 +11,7 @@ const Developers = () => {
         <title>Developers | Globe Terra</title>
         <meta name="description" content="Developer resources for Globe Terra are coming soon." />
       </Head>
-      <main className="min-h-screen bg-gradient-to-r from-black to-[#33023d] flex flex-col items-center justify-center px-8 pb-16">
+      <main className="min-h-screen bg-gradient-to-r from-black to-[#001a11] flex flex-col items-center justify-center px-8 pb-16">
         {/* Title Section */}
         <div className="text-center mt-16">
           <h1 className="text-6xl font-bold text-white mb-6">Developers</h1>

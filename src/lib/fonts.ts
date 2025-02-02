@@ -14,3 +14,4 @@ export const platypi = Platypi({
     subsets: ["latin"],
     display: "swap",
 });
+ 
