@@ -79,7 +79,7 @@ export default function Home() {
   
 
   return (
-    <main className="min-h-screen bg-cover text-white bg-gradient-to-r from-black to-[#33023d]">
+    <main className="min-h-screen bg-cover text-white bg-gradient-to-r from-black to-[#001a11]">
       {/* Section 1 */}
       <section
         ref={sectionRefs[0]}
@@ -87,7 +87,7 @@ export default function Home() {
           visibleSections.includes(0) ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
-        <div className="md:mt-10 mt-16 z-20 md:ml-32 w-[75%] text-center">
+        <div className="md:mt-10 mt-16 z-20 md:ml-32 w-[75%] text-center md:text-left">
           <div>
             <h1 className="text-4xl md:text-7xl font-bold text-white hover:cursor-pointer transition-all duration-500">
               GlobeTerra
@@ -99,7 +99,7 @@ export default function Home() {
               Harnessing the power of Deep Q-Networks (DQN) to revolutionize financial decision-making in the blockchain ecosystem.
             </p>
           </div>
-          <div className="bg-slate-950 bg-opacity-75 md:px-4 md:py-3 px-3 py-2 rounded-3xl mt-8 flex flex-row justify-between items-center md:mr-20">
+          <div className="bg-slate-950 bg-opacity-75 md:px-4 md:py-3 px-3 py-2 rounded-3xl  mt-8 flex flex-row justify-between items-center md:mr-20">
             <h1 className="">Download our Roadmap </h1>
             <a
               href=""
@@ -108,7 +108,7 @@ export default function Home() {
               Roadmap
             </a>
           </div>
-          <div className="bg-slate-600 bg-opacity-35 border border-slate-700 shadow-lg shadow-slate-950 md:w-96 h-auto rounded-xl mt-10 flex flex-col hover:scale-105">
+          <div className="bg-slate-600 bg-opacity-35 border border-slate-700 shadow-lg shadow-green-950 md:w-96 h-auto rounded-xl mt-10 flex flex-col hover:scale-105">
             <h1 className="text-xl pt-7 px-5">Audited By</h1>
             <div>
               <img src="TradingView.png" alt="" className="h-fit" />
@@ -116,8 +116,10 @@ export default function Home() {
           </div>
           </div>
         
-        <div className="relative flex flex-col items-center mt-20 w-full h-96 aspect-video rounded-lg ">
-          <img src="original-d7d1fab1bfcb5eb34fd2f-unscreen.gif" alt="" className="md:h-full  md:hover:scale-125" />
+        <div className="flex flex-row justify-center items-start w-full h-full aspect-video rounded-lg ">
+          <img src="globeterra2.png" alt="" className="h-full animate-float"  style={{
+      animation: 'float 3s ease-in-out infinite'
+    }}/>
           
         </div>
         
@@ -232,6 +234,7 @@ export default function Home() {
           src={platform.image}
           alt={platform.name}
           className="w-40 sm:w-48 md:w-64 h-auto mx-auto"
+         
         />
       </div>
     ))}
