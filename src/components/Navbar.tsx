@@ -52,7 +52,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden flex flex-col items-center gap-4 bg-gradient-to-r from-black to-[#33023d] py-6">
+        <div className="md:hidden flex flex-col items-center gap-4 bg-gradient-to-r from-black to-[#001a11] py-6">
           <Link
             href="/developers"
             className="text-lg font-medium hover:text-gray-300"

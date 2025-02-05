@@ -48,7 +48,7 @@ export default function Home() {
   }, []);
   useEffect(() => {
     const countdownElement = document.getElementById("countdown");
-    const targetDate = new Date("2025-02-01T00:00:00Z").getTime();
+    const targetDate = new Date("2025-03-01T00:00:00Z").getTime();
   
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -108,7 +108,7 @@ export default function Home() {
               Roadmap
             </a>
           </div>
-          <div className="bg-slate-600 bg-opacity-35 border border-slate-700 shadow-lg shadow-green-950 md:w-96 h-auto rounded-xl mt-10 flex flex-col hover:scale-105">
+          <div className="bg-slate-600 bg-opacity-35 border border-slate-700 shadow-lg md:w-96 h-auto rounded-xl mt-10 flex flex-col hover:scale-105">
             <h1 className="text-xl pt-7 px-5">Audited By</h1>
             <div>
               <img src="TradingView.png" alt="" className="h-fit" />
@@ -116,8 +116,8 @@ export default function Home() {
           </div>
           </div>
         
-        <div className="flex flex-row justify-center items-start w-full h-full aspect-video rounded-lg ">
-          <img src="globeterra2.png" alt="" className="h-full animate-float"  style={{
+        <div className="flex flex-row justify-center items-start w-full h-full aspect-video rounded-lg pt-10">
+          <img src="globeterracoin.png" alt="" className="h-full animate-float"  style={{
       animation: 'float 3s ease-in-out infinite'
     }}/>
           
@@ -137,7 +137,7 @@ export default function Home() {
         <div className="flex flex-col justify-between items-center gap-12 mt-10 bg-black bg-opacity-55 shadow-lg md:w-[60%] rounded-xl px-10 py-10 hover:scale-105">
           <h1 className="md:text-2xl font-bold text-center">Claim Your Free $GTR</h1>
           <p className="md:text-xl font-thin text-center md:w-[70%] text-yellow-200">
-            The $GTR airdrop begins on <strong>February 1st</strong>. Join us on Telegram and X to claim your share and be part of the future of financial connectivity.
+            The $GTR airdrop begins on <strong>March 1st</strong>. Join us on Telegram and X to claim your share and be part of the future of financial connectivity.
           </p>
 
           {/* Countdown Timer */}
