@@ -112,7 +112,7 @@ const Footer = () => {
             </li>
             <li>
               <Link href="/how-to-buy" className="hover:text-white">
-                How to Buy $GLOBE
+                How to Buy $GTR
               </Link>
             </li>
             <li>
@@ -129,7 +129,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Social Media Icons */}
+      
       
 
       {/* Copyright */}

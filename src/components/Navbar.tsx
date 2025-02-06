@@ -43,7 +43,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="/launch"
-            className="px-6 py-2 bg-yellow-500 hover:bg-yellow-600 rounded-full text-black font-semibold"
+            className="px-6 py-2 bg-gradient-to-r from-yellow-700 via-yellow-400 to-yellow-700 bg-[length:200%_200%] animate-gradient hover:bg-yellow-800 rounded-full text-black font-semibold"
           >
             Launch App
           </Link>
