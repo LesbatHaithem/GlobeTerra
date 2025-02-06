@@ -103,15 +103,15 @@ export default function Home() {
             <h1 className="">Download our Roadmap </h1>
             <a
               href=""
-              className="border border-yellow-600 rounded-3xl text-yellow-600 px-2 py-2 hover:bg-yellow-600 hover:text-black"
+              className="border border-yellow-600 rounded-3xl text-yellow-600 px-2 py-2 transform transition-transform duration-500 hover:bg-yellow-600 hover:text-black"
             >
               Roadmap
             </a>
           </div>
-          <div className="bg-slate-600 bg-opacity-35 border border-slate-700 shadow-lg md:w-96 h-auto rounded-xl mt-10 flex flex-col hover:scale-105">
-            <h1 className="text-xl pt-7 px-5">Audited By</h1>
+          <div className=" mt-10 flex flex-row items-start">
+            <h1 className="text-4xl pt-10">Audited By :</h1>
             <div>
-              <img src="TradingView.png" alt="" className="h-fit" />
+              <img src="TradingView.png" alt="" className=" w-60 h-auto transform transition-transform duration-500 hover:scale-105" />
             </div>
           </div>
           </div>
@@ -134,7 +134,7 @@ export default function Home() {
         <h2 className="text-3xl md:text-6xl font-bold text-white mb-12">
           $GTR Airdrop
         </h2>
-        <div className="flex flex-col justify-between items-center gap-12 mt-10 bg-black bg-opacity-55 shadow-lg md:w-[60%] rounded-xl px-10 py-10 hover:scale-105">
+        <div className="flex flex-col justify-between items-center gap-12 mt-10 bg-black bg-opacity-55 shadow-lg md:w-[60%] rounded-xl px-10 py-10 transform transition-transform duration-500 hover:scale-105">
           <h1 className="md:text-2xl font-bold text-center">Claim Your Free $GTR</h1>
           <p className="md:text-xl font-thin text-center md:w-[70%] text-yellow-200">
             The $GTR airdrop begins on <strong>March 1st</strong>. Join us on Telegram and X to claim your share and be part of the future of financial connectivity.
@@ -184,7 +184,7 @@ export default function Home() {
         <h2 className="text-3xl md:text-6xl font-bold text-white mb-12">
           FEATURES Of GLOBE TERRA
         </h2>
-        <div className="flex flex-col justify-between items-center gap-12 mt-10 bg-black bg-opacity-75 shadow-lg md:w-[60%] rounded-xl px-10 py-10 hover:scale-105">
+        <div className="flex flex-col justify-between items-center gap-12 mt-10 bg-black bg-opacity-75 shadow-lg md:w-[60%] rounded-xl px-10 py-10 transform transition-transform duration-500 hover:scale-105">
         <h1 className="text-3xl font-bold text-center text-yellow-600">DQN based AI Agent</h1>
         <div className="flex md:flex-row flex-col justify-between items-center gap-12">
           <p className="md:text-xl text-sm font-thin md:w-[50%]">
@@ -194,7 +194,7 @@ export default function Home() {
           </div>
 
         </div>
-        <div className="flex flex-col justify-between items-center gap-12 mt-10 bg-black bg-opacity-75 shadow-lg md:w-[60%] rounded-xl px-10 py-10 hover:scale-105">
+        <div className="flex flex-col justify-between items-center gap-12 mt-10 bg-black bg-opacity-75 shadow-lg md:w-[60%] rounded-xl px-10 py-10 transform transition-transform duration-500 hover:scale-105">
           <h1 className="text-3xl font-bold text-center text-yellow-600">Globe Terra API</h1>
           <div className="flex md:flex-row flex-col justify-between items-center gap-12">
             <p className="md:text-xl font-thin md:w-[50%] text-sm">
