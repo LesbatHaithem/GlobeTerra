@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     {
       rel: "icon",
       type: "image/x-icon",
-      url: "globeterra1.png",
+      url: "globeterracoin.png",
       media: "(prefers-color-scheme: light)",
     },
     {
       rel: "icon",
       type: "image/png",
-      url: "globeterra1.png",
+      url: "globeterracoin.png",
       media: "(prefers-color-scheme: dark)",
     },
   ],
