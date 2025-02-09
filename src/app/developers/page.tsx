@@ -41,23 +41,23 @@ const Developers = () => {
   
 
 
-  <div className="flex flex-col items-center justify-center gap-12 mt-20 rounded-xl bg-black bg-opacity-75 shadow-lg md:w-[90%] lg:w-[70%] max-w-screen px-6 sm:px-8 md:px-10 py-10 border border-yellow-600">
-    <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-center text-white">
+          <div className="flex flex-col items-center justify-center gap-8 md:gap-12 mt-10 rounded-xl bg-black bg-opacity-75 shadow-lg w-[90%] md:w-[80%] lg:w-[70%] max-w-screen px-6 sm:px-8 md:px-10 py-8 md:py-10 border border-yellow-600">
+    <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-center">
       Subscribe to our newsletter
     </h1>
-    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 w-full">
+    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 w-full md:w-[60%]">
       <input
         type="email"
         placeholder="Enter your email"
-        className="flex-1 border border-yellow-600 rounded-xl px-4 py-2 text-sm w-full sm:w-auto"
+        className="flex-1 border text-black border-yellow-600 rounded-xl px-4 py-2 text-sm w-full sm:w-auto"
       />
-      <button className="border border-yellow-600 rounded-xl px-4 py-2 hover:bg-yellow-600 hover:text-black">
+      <button className="border border-yellow-600 rounded-xl px-4 py-2 hover:bg-yellow-600 hover:text-black text-sm md:text-base">
         Subscribe
       </button>
     </div>
     <div className="flex flex-col items-center justify-center gap-5">
       <h1 className="text-sm sm:text-base md:text-xl font-bold text-center">Our Links:</h1>
-      <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
         {[
           { href: "https://github.com", icon: <FaGithub size={25} />, name: "Github" },
           { href: "https://twitter.com", icon: <FaXTwitter size={25} />, name: "X" },
@@ -72,7 +72,7 @@ const Developers = () => {
             key={link.name}
             href={link.href}
             target="_blank"
-            className="flex flex-col justify-center items-center text-gray-500 hover:text-white"
+            className="flex flex-col  justify-center items-center text-gray-500 hover:text-white"
           >
             {link.icon}
             <h1 className="text-xs sm:text-sm">{link.name}</h1>
