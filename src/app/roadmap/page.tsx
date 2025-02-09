@@ -28,6 +28,7 @@ const RoadmapPage = () => {
             start: "top 80%", // Start animation when the top of the item is 80% in view
             end: "bottom 20%", // End animation when the bottom of the item is 20% in view
             toggleActions: "play none none reverse", // Play animation on enter, reverse on leave
+            markers: true, // Enable markers for debugging (remove in production)
           },
         });
 
@@ -46,6 +47,9 @@ const RoadmapPage = () => {
           },
         });
       });
+
+      // Refresh ScrollTrigger after all animations are set up
+      ScrollTrigger.refresh();
     }
   }, []);
 
